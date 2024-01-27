@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://de5y6f0fmcda2"]
+
+[ext_resource type="Script" path="res://Terrain/map_section_100_x_100.gd" id="1_snd25"]
+
+[node name="MapSection100x100" type="Node3D"]
+script = ExtResource("1_snd25")

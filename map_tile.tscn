@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://dfk2eaee53fi1"]
+
+[ext_resource type="Script" path="res://MapTile.gd" id="1_slmg4"]
+[ext_resource type="PackedScene" uid="uid://bcmdmukx2og81" path="res://Terrain/clay.tscn" id="2_g4fad"]
+[ext_resource type="PackedScene" uid="uid://fjhwb7v63b7r" path="res://Terrain/gold.tscn" id="3_77o4n"]
+[ext_resource type="PackedScene" uid="uid://5yrfkngvwdte" path="res://Terrain/grass.tscn" id="4_ex022"]
+[ext_resource type="PackedScene" uid="uid://fby3qt17e2hh" path="res://Terrain/iron.tscn" id="5_ut1y4"]
+[ext_resource type="PackedScene" uid="uid://cbwt44b0l6ykw" path="res://Terrain/stone.tscn" id="6_5l41a"]
+[ext_resource type="PackedScene" uid="uid://rlf7p6bu04e5" path="res://Terrain/wood.tscn" id="7_ip2jb"]
+
+[node name="MapTile" type="Node3D"]
+script = ExtResource("1_slmg4")
+
+[node name="tile_types" type="Node3D" parent="."]
+
+[node name="clay" parent="tile_types" instance=ExtResource("2_g4fad")]
+visible = false
+
+[node name="gold" parent="tile_types" instance=ExtResource("3_77o4n")]
+visible = false
+
+[node name="grass" parent="tile_types" instance=ExtResource("4_ex022")]
+visible = false
+
+[node name="iron" parent="tile_types" instance=ExtResource("5_ut1y4")]
+visible = false
+
+[node name="stone" parent="tile_types" instance=ExtResource("6_5l41a")]
+visible = false
+
+[node name="wood" parent="tile_types" instance=ExtResource("7_ip2jb")]
+visible = false

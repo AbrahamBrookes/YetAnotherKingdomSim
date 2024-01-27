@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctl0go86jtlcp"]
+
+[ext_resource type="PackedScene" uid="uid://de5y6f0fmcda2" path="res://Terrain/map_section_100_x_100.tscn" id="1_w5pim"]
+
+[node name="WorldMap" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.647442, 0.762115, 0, -0.762115, 0.647442, 9.46338, 9.82152, 20.3858)
+
+[node name="MapSection100x100" parent="." instance=ExtResource("1_w5pim")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.921271, 0.188005, -0.340462, 0.255832, 0.3664, 0.894596, 0.292933, -0.911266, 0.289456, -0.921095, 4.19021, -0.292877)
